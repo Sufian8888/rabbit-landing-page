@@ -108,7 +108,7 @@ function App() {
           ].map((item, idx) => (
             <div
               key={idx}
-              className="bg-gradient-to-b from-[#25c0f9] to-[#25c0f9] rounded-2xl border-2 border-blue-800 p-6 w-full max-w-5xl flex flex-col md:flex-row gap-6"
+              className="bg-gradient-to-b from-[#25c0f9] to-[#25c0f9] rounded-2xl border-2 border-white p-6 w-full max-w-5xl flex flex-col md:flex-row gap-6"
             >
               <div className="w-full md:w-1/2">
                 <img
@@ -122,11 +122,11 @@ function App() {
                   {item.client}
                 </span>
 
-                <h3 className="text-2xl text-black font-semibold">
+                <h3 className="text-2xl text-white font-semibold">
                   {item.title}
                 </h3>
 
-                <div className="text-sm text-black">
+                <div className="text-sm text-white">
                   <p>
                     <strong>BEFORE:</strong> {item.before}
                   </p>
@@ -138,8 +138,8 @@ function App() {
                   </p>
                 </div>
 
-                <div className="text-sm text-black mt-2">{item.summary}</div>
-                <div className="text-sm text-black">{item.note}</div>
+                <div className="text-sm text-white mt-2">{item.summary}</div>
+                <div className="text-sm text-white">{item.note}</div>
               </div>
             </div>
           ))}
