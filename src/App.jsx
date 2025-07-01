@@ -126,7 +126,7 @@ function App() {
                   {item.title}
                 </h3>
 
-                <div className="text-sm text-white">
+                <div className="text-sm text-white font-semibold">
                   <p>
                     <strong>BEFORE:</strong> {item.before}
                   </p>
@@ -138,8 +138,12 @@ function App() {
                   </p>
                 </div>
 
-                <div className="text-sm text-white mt-2">{item.summary}</div>
-                <div className="text-sm text-white">{item.note}</div>
+                <div className="text-sm text-white mt-2 font-semibold">
+                  {item.summary}
+                </div>
+                <div className="text-sm text-white font-semibold">
+                  {item.note}
+                </div>
               </div>
             </div>
           ))}
